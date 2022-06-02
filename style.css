@@ -1,0 +1,12 @@
+#html-text-area, #css-text-area{
+    background: darkslategray;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(42, 255, 255);
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+#output{
+    border: 2px solid darkslategray;
+}
