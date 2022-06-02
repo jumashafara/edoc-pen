@@ -1,6 +1,7 @@
 # Edoc Pen
 * In this project, we step by step, create a simple codepen-like code editor that allows us to write html and do some styling to it. 
 * Thats not all it renders the changes to your html or css immediately(liveserver 😀).
+* You can test it out at https://jumashafara.github.io/edoc-pen/
 
 ## Step 1
 We begin begin by creating a basic index.html file.
