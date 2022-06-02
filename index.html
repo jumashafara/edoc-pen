@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edoc Pen</title>
+    <style></style>
+</head>
+<body>
+    <textarea name="" id="css-text-area" cols="30" rows="10"></textarea>  
+    <textarea name="" id="html-text-area" cols="30" rows="10"></textarea>
+    <div id="output"></div>
+
+    <script>
+        // Each variable in the first array will be assigned the 
+        // corresponding value in the second array
+        const [html_text_area, css_text_area, style, output] = 
+                    [
+                        document.querySelector('#html-text-area'),
+                        document.querySelector('#css-text-area'),
+                        document.querySelector('#output'),
+                        document.querySelector('style')
+                    ]
+        
+        html_text_area.addEventListener('keyup', e => {
+            // lets first stop all natural outcomes related to this event
+            e.preventDefault()
+
+            // pass the value from the html text area to output div 
+            output.innerHTML = html_text_area.value
+        })
+
+        css_text_area.addEventListener('keyup', e => {
+            // lets first stop all natural outcomes related to this event
+            e.preventDefault()
+
+            // pass the value from the css text area to style tag
+            style.innerHTML = css_text_area.value
+        })
+    </script>
+</body>
+</html>
