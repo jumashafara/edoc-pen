@@ -7,6 +7,21 @@
     padding: 0.5em;
 }
 
+body{
+height: 100vh;
+}
+
 #output{
     border: 2px solid darkslategray;
+}
+
+.area-label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.credit{
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0;
 }
