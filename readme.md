@@ -3,13 +3,14 @@
 * Thats not all it renders the changes to your html or css immediately(liveserver 😀).
 <<<<<<< HEAD
 =======
-* You can test it out at https://jumashafara.github.io/edoc-pen/
+* You can test it out [here](https://jumashafara.github.io/edoc-pen/)
 >>>>>>> 59d9366f4a1e53f0d270f4ecea3114a91a11b934
 
 ## Step 1
 We begin begin by creating a basic index.html file.
 
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,18 +28,21 @@ We begin begin by creating a basic index.html file.
 * Inside our body, we need to create two textareas, one where the HTML code code will be written, and the other for CSS.
 * We also need a div with class= "output" where our output will be rendered.
 
-```<textarea name="" id="html-text-area" cols="30" rows="10"></textarea>
+```
+<textarea name="" id="html-text-area" cols="30" rows="10"></textarea>
    <textarea name="" id="css-text-area" cols="30" rows="10"></textarea>
    <div class="output"></div>
 ```
 
 * Let's add an empty style tag inside the head tag, this is where our styles from the CSS text area will be send
 
-```<style></style>
+```
+<style></style>
 ```
 Our full html code should look like this now
 
-```<!DOCTYPE html>
+```
+    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -61,7 +65,8 @@ If we open our html file in a browser, we should have two text areasl.
 ## Step 3
 Now we need to connect the text areas to the style tag and output div so that we can have something functioning. We will do this with a few lines of javascript put in a script tag just above the closing body tag, simply explained below
 
-```<script>
+```
+    <script>
         // Each variable in the first array will be assigned the 
         // corresponding value in the second array
         const [html_text_area, css_text_area, style, output] = 
@@ -94,7 +99,8 @@ With that, should now be having a working Edoc Pen
 
 The full code is as below
 
-```<!DOCTYPE html>
+```
+    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
